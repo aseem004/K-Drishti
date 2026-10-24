@@ -1,79 +1,175 @@
-<div align="center">
+::: {align="center"}
+# K-Drishti
 
-K-Drishti
-See the issue. Track the action.
-A Kanpur-focused civic-tech demo for reporting community issues, tracking complaint progress, and exploring public-service transparency.
+### Your City. Your Services. Your Voice.
 
-Features · Tech Stack · Run Locally · Deploy · Demo Data Notice
-</div>
+**A civic-tech platform for Kanpur that helps residents find the right
+municipal service, report local issues, and follow progress with greater
+transparency.**
 
-🌆 About the Project
-K-Drishti is a responsive civic-services prototype designed around a simple idea: residents should be able to raise local concerns, follow their progress, and better understand how civic projects are presented. The interface is themed for Kanpur and is intended for hackathon demonstrations and prototyping.
-✨ Features
-- Civic overview — a dashboard of issue summaries, recent reports, and city activity.
-- Report an issue — submit a concern with a category, locality, description, and optional image preview.
-- Track a complaint — find a complaint by its generated ID and view its status timeline.
-- City issue map — explore demo issue markers on a Leaflet map, with category/status filters and a corresponding list.
-- Community support — support an issue and see support counts in the demo interface.
-- City services — service cards can take users to the report flow with a relevant category selected.
-- Funding & transparency — inspect illustrative project budgets, releases, expenditure, verification indicators, and expense records.
-- City analytics — view summaries derived from the app's issue data.
-- Responsive interface — navigation and layouts designed for desktop and smaller screens.
+Built by **Team SYNAPSE** · **IMPACTX Hackathon**
+
+[Overview](#-overview) · [Features](#-key-features) · [Tech
+Stack](#-tech-stack) · [Run Locally](#-getting-started) · [Demo
+Data](#-important-demo-data-notice)
+:::🏙️ Overview
+Problem statement --- "Your City, Your Services"
+
+Help residents report local issues and find the right municipal service,
+with better routing and clearer updates.
+
+Citizens can struggle to identify the correct municipal service and may
+not know what happens after they submit a complaint. Reports can feel
+fragmented when ownership, progress, and next steps are not visible.
+
+K-Drishti --- K for Kanpur and Drishti for vision --- is our
+response to this challenge. It brings civic reporting, service
+discovery, location-based issue visibility, complaint tracking, and
+public-funding information into one responsive web experience.
+Our goal: Turn a complaint from a one-time submission into a
+visible journey --- from reporting to tracking and understanding the
+action taken.
+
+✨ Key Features
+- Civic dashboard --- View issue summaries, recent reports,
+  resolution progress, and community activity.
+- Find the right service --- Browse civic-service categories and
+  start a report with the relevant category selected.
+- Report an issue --- Submit a title, category, locality,
+  description, priority, and optional image preview.
+- Track a complaint --- Use a complaint reference ID to find a
+  report and view its status timeline.
+- Kanpur issue map --- Explore issue markers by location and
+  filter reports by category or status.
+- Community support --- Support issues to help surface community
+  priorities.
+- Funding & transparency --- Explore illustrative project budgets,
+  releases, expenses, verification status, and allocation summaries.
+- City analytics --- Review visual summaries generated from the
+  issue dataset.
+- Responsive interface --- Designed for laptop, tablet, and mobile
+  screens.
+- Light/dark mode --- Switch the visual theme to suit your
+  preference.
+🔄 How It Works
+1. Discover --- Choose the municipal service or issue category that
+   best matches the problem.
+2. Report --- Add the issue details, locality, priority, and
+   optional image preview.
+3. Reference --- Receive a complaint ID that can be used to find
+   the report.
+4. Locate --- View the issue on the Kanpur-focused map and explore
+   available filters.
+5. Track --- Follow the displayed status and timeline.
+6. Understand --- Explore city-level summaries and illustrative
+   funding information.
 🧰 Tech Stack
-- React 19 — UI components
-- Vite 8 — development server and production build
-- JavaScript (ES modules)
-- CSS — application styling and theme
-- Leaflet + React Leaflet — interactive map
-- Lucide React — interface icons
-- Browser localStorage — local persistence for reports and support selections
-- OpenStreetMap tiles — map tiles when an internet connection is available
+  Technology                          Purpose
+  React                               Component-based user interface
+
+  Vite                                Development server and production
+                                      build
+
+  JavaScript (ES modules)             Application logic
+
+  CSS                                 Responsive styling and themes
+
+  Leaflet + React Leaflet             Interactive issue map
+
+  Lucide React                        Interface icons
+
+  Browser localStorage              Persist demo reports and community
+                                      support in the current browser
+
+  OpenStreetMap tiles                 Map background when internet access
+                                  is available
 🚀 Getting Started
 Prerequisites
-Install a current Node.js LTS version compatible with the Vite version in package.json, plus npm.
-Install and run
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/<YOUR-REPOSITORY-NAME>.git
-cd <YOUR-REPOSITORY-NAME>
+- Node.js and npm installed
+- Git (optional, for cloning the repository)
+Run the project locally
+# Clone your repository (replace with your actual GitHub repository URL)
+git clone <YOUR_REPOSITORY_URL>
+
+# Enter the project folder
+cd <PROJECT_FOLDER>
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
-Open the local URL printed in the terminal (usually http://localhost:5173).
-Available scripts
-npm run dev             # Start the Vite development server
+Open the local address printed in the terminal by Vite.
+Production build
+npm run build
+npm run preview
+Useful project commands
+npm run dev             # Start the local development server
 npm run build           # Create the production build in dist/
 npm run preview         # Preview the production build locally
-npm run lint            # Run Oxlint
-npm run validate:issues # Run issue validation checks
-npm run validate:support # Run support repository validation checks
-🌐 Deploy to GitHub Pages
-This repository includes a GitHub Actions workflow at .github/workflows/deploy.yml to build and publish the Vite site to GitHub Pages.
-1. Create a GitHub repository and push the project files to its main branch. Do not upload node_modules/.
-2. On GitHub, open Settings → Pages.
-3. Under Build and deployment, choose GitHub Actions as the source.
-4. Push to main (or manually run the workflow from Actions → Deploy to GitHub Pages).
-5. When the workflow succeeds, GitHub Pages will show the published site URL in Settings → Pages.
-Your URL will generally follow this format:
-https://<YOUR-GITHUB-USERNAME>.github.io/<YOUR-REPOSITORY-NAME>/
-Replace the placeholders with your actual GitHub username and repository name. The public link becomes live only after the repository is pushed and the Pages workflow completes successfully.
-🧪 Validation Notes
-The uploaded archive includes a previously generated dist/ build. During this review, the source tree and package scripts were inspected, but a fresh production build could not be completed from the bundled node_modules: its Vite executable did not have execute permission and the bundled Rolldown native binding for this environment was missing. Run npm install followed by npm run build in a clean environment before publishing.
-⚠️ Important Demo Data Notice
-K-Drishti is a prototype, not an official Kanpur government service. All seeded civic issues, project budgets, expenditure figures, verification indicators, and ledger records are fictional demonstration data. They must not be presented as real government records.
-- New reports and support selections are stored in the visitor's browser using localStorage.
-- Data is not sent to a municipal authority or shared with other users.
-- Clearing browser storage may remove locally saved demo data.
-- The map uses online OpenStreetMap tiles and therefore requires internet access for the map background.
-- This prototype does not provide authenticated accounts, a production backend, or official complaint submission.
-🔮 Future Improvements
-- Add a secure backend and database for shared reports.
-- Add user authentication and role-based access for residents and administrators.
-- Connect complaint status to verified municipal workflows.
-- Replace fictional funding records with authenticated, sourced public data before any real-world deployment.
-- Add automated accessibility and end-to-end tests.
-🤝 Contributing
-Contributions and suggestions are welcome. For changes, create a branch, make a focused update, and open a pull request describing the change and how it was tested.
-<div align="center">
+npm run lint             # Run Oxlint
+npm run validate:issues  # Run issue-data validation
+npm run validate:support # Run support-data validation
+🌐 Deployment
+This project uses Vite, so the deployment configuration depends on
+the hosting provider and repository URL.
 
-K-Drishti · Civic technology for a more connected city
+For GitHub Pages: 1. Push the project source to a GitHub repository. 2.
+If deploying to a project site such as
+https://<username>.github.io/<repository>/, configure Vite's base in
+vite.config.js to '/<repository>/' before building. For a
+user/organization site at https://<username>.github.io/, the base is
+usually '/'. 3. Run npm run build. 4. Publish the generated dist/
+directory using GitHub Actions or your chosen Pages workflow. 5. Open
+Settings → Pages in the repository and confirm the deployment source
+and published URL.
 
-Built as a hackathon demonstration.
-</div>
+Live demo: Add your deployed URL here after hosting:
+YOUR_LIVE_DEMO_URL
+🧪 Demo Scope & Data Notice
+K-Drishti is a hackathon prototype, not a live municipal service.
+- The issue reports, locations, engagement counts, status summaries,
+  budgets, expenses, and project-ledger records shown in the demo are
+  fictional illustrative data.
+- Funding values are demonstration figures and must not be
+  interpreted as real government accounts or expenditure.
+- New reports and support selections are stored in the browser's
+  localStorage; they are not sent to a central server and may not
+  appear on another device or browser.
+- The current prototype does not connect to Kanpur Nagar Nigam or any
+  official municipal complaint system.
+- Optional images are handled as a local preview in the interface; the
+  app does not upload them to a backend.
+- Map tiles are provided by OpenStreetMap when an internet connection
+  is available.
+🛣️ Roadmap
+The presentation outlines a staged delivery path:
+- Phase 1 --- Core civic loop: Responsive reporting, complaint
+  tracking, map, and seeded demo data.
+- Phase 2 --- Transparency and analytics: Funding visibility,
+  analytics, and project-verification workflows.
+- Phase 3 --- Future capability: AI-assisted camera detection for
+  potholes and work zones, with map layers for awareness and planning.
+AI-assisted camera detection is a planned capability, not a feature
+represented as already implemented. Any future deployment would need to
+address data quality, privacy, false positives, ownership handoffs, and
+public adoption.
+👥 Team
+Team SYNAPSE --- IMPACTX Hackathon
+- Ashish
+- Aseem
+- Ruthvik
+- Hitesh
+🎯 Why K-Drishti?
+Traditional reporting can leave residents wondering what happened after
+they pressed Submit. K-Drishti brings the report, location, status,
+responsible service area, and related illustrative project information
+into a clearer civic journey.
+
+See the issue. Track the action. Build trust through visibility.
+::: {align="center"}
+**K-Drishti · Connecting Citizens, Streamlining Services, Transforming
+Kanpur**
+
+Made for **IMPACTX Hackathon** by **Team SYNAPSE**.
+:::
