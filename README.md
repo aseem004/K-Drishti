@@ -195,11 +195,41 @@ Our goal is to help build a Kanpur where every civic issue has a clearer path fr
 </div>
 
 ---
-# ✍️ Author
-
-***- Aseem Singh Gaur***
 
 ## SCREENSHOTS
-<img width="800" height="600" alt="Screenshot 2026-10-24 161948" src="https://github.com/user-attachments/assets/e4b1d8a2-7c1a-4e1e-a1d0-aaf784af0082" />
-<img width="800" height="600" alt="Screenshot 2026-10-24 162010" src="https://github.com/user-attachments/assets/9a139e2f-0068-40cc-b840-36be396a2a2b" />
+- Light Mode :
 
+<img width="600" height="500" alt="Screenshot 2026-10-24 161948" src="https://github.com/user-attachments/assets/e4b1d8a2-7c1a-4e1e-a1d0-aaf784af0082" />
+
+- Dark Mode :
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 162010" src="https://github.com/user-attachments/assets/9a139e2f-0068-40cc-b840-36be396a2a2b" />
+
+- AI Integrated Camera detecting & mapping system:
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 163014" src="https://github.com/user-attachments/assets/56b95f82-6eb3-405a-9d0f-e909d260e190" />
+
+- City Services to avail(for citizens):
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 163034" src="https://github.com/user-attachments/assets/1bbdc842-ecc3-40da-ad02-41f8a92a9748" />
+
+- City Analytics (shows issues count and resolved data):
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 163050" src="https://github.com/user-attachments/assets/5d02305f-9268-46af-9c11-be8556918e54" />
+
+- Funding & Transparency (general data):
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 163107" src="https://github.com/user-attachments/assets/a78b35cb-0296-4656-9c2a-40ace7d3a9de" />
+
+- Report an Issue(register complaints of citizens):
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 163121" src="https://github.com/user-attachments/assets/559c6f02-8c47-4c49-a7d8-a4a71a88bc64" />
+
+- Track complaints (allows Citizen and Government to track either resolved or till when):
+
+<img width="600" height="500" alt="Screenshot 2026-10-24 163146" src="https://github.com/user-attachments/assets/008640f4-83cd-4aa6-9651-2ff435f2e62f" />
+
+---
+## ✍️ Author
+
+**- Aseem Singh Gaur**
