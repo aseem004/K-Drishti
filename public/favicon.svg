@@ -1,6 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <rect width="48" height="48" rx="14" fill="#129687"/>
-  <circle cx="24" cy="24" r="12" fill="none" stroke="#fff" stroke-width="2.4"/>
-  <circle cx="24" cy="24" r="4" fill="none" stroke="#fff" stroke-width="2.4"/>
-  <path d="M24 7v7m0 20v7M7 24h7m20 0h7" stroke="#fff" stroke-linecap="round" stroke-width="2.4"/>
-</svg>
+<link rel="icon" type="image/png" href="/kdrishti-sidebar-logo.png" />
+
